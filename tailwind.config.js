@@ -10,7 +10,6 @@ module.exports = {
     },
     boxShadow: {
       DEFAULT: '0px 4px 4px rgba(0, 0, 0, 0.25)',
-      blue: '2px 2px 8px rgba(0, 164, 255, 0.32)',
     },
     colors: {
       transparent: 'transparent',
@@ -24,6 +23,7 @@ module.exports = {
       yellow: {
         DEFAULT: '#ffe066',
         light: '#fffae6',
+        darker: '#a66a27',
       },
       green: {
         DEFAULT: '#16A34A',
@@ -41,6 +41,12 @@ module.exports = {
         light: '#ffcccc',
       },
       pomegranate: '#E84713',
+    },
+    screens: {
+      xs: '961px',
+    },
+    maxWidth: {
+      'max-w-screen-xs': '960px',
     },
     extend: {},
   },
