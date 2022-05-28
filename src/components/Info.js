@@ -1,11 +1,8 @@
 import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-
 const SLIDER_SETTING = {
   dots: true,
   infinite: true,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 3000,
   speed: 500,
   slidesToShow: 1,
@@ -44,20 +41,20 @@ function Info() {
       <div
         data-aos="fade-left"
         data-aos-delay="2000"
-        className="mx-auto max-w-max-w-screen-xs p-4 pb-8"
+        className="max-w-max-w-screen-xs mx-auto p-4 pb-8"
       >
-        <Slider {...SLIDER_SETTING}>
-          <div>
-            <div className="h-64 w-96 bg-[url('./assets/info-1.png')] bg-contain bg-center bg-no-repeat" />
+        <Slider {...SLIDER_SETTING} className="max-w-xl mx-auto">
+          <div className="h-full w-full">
+            <div className="mx-auto h-64 w-96 bg-[url('./assets/info-1.png')] bg-contain bg-center bg-no-repeat" />
           </div>
-          <div>
-            <div className="h-64 w-96 bg-[url('./assets/info-2.png')] bg-contain bg-center bg-no-repeat" />
+          <div className="h-full w-full">
+            <div className="mx-auto h-64 w-96 bg-[url('./assets/info-2.png')] bg-contain bg-center bg-no-repeat" />
           </div>
-          <div>
-            <img src="http://placekitten.com/g/400/200" alt="" />
+          <div className="h-full w-full">
+            <img src="http://placekitten.com/g/400/200" alt="" className=" mx-auto" />
           </div>
-          <div>
-            <img src="http://placekitten.com/g/400/200" alt="" />
+          <div className="h-full w-full">
+            <img src="http://placekitten.com/g/400/200" alt="" className=" mx-auto" />
           </div>
         </Slider>
       </div>

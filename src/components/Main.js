@@ -10,7 +10,9 @@ export function Main() {
         entries.forEach((entry) => {
           entry.target.classList.toggle('aos-animate', entry.isIntersecting);
         });
-      }, {});
+      }, {
+        threshold: 0,
+      });
       items.forEach((item) => {
         observer.observe(item);
       });
