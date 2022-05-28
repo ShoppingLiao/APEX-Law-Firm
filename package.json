@@ -1,7 +1,8 @@
 {
-  "name": "my-app",
+  "name": "APEX-Law-Firm",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage":".",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-regular-svg-icons": "^6.1.1",
@@ -12,6 +13,7 @@
     "@testing-library/user-event": "^13.2.1",
     "aos": "^2.3.4",
     "clsx": "^1.1.1",
+    "gh-pages": "^4.0.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-router-dom": "^6.3.0",
@@ -24,7 +26,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
