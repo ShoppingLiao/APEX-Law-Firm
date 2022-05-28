@@ -27,29 +27,37 @@ function Header() {
   }
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-10 flex items-center justify-between bg-blue-darker p-1 shadow">
-      <div className="h-14 w-24 bg-[url('./assets/logo.png')] bg-contain bg-center bg-no-repeat"></div>
-      <div className="text-2xl text-white">鼎道國際法律事務所</div>
-      <div
-        className="flex h-12 w-10 items-center justify-center rounded text-white"
-        onClick={handleMenuBtnClick}
-      >
-        <FontAwesomeIcon icon="fa-solid fa-bars" className="h-6 w-6" />
+    <header className="fixed top-0 left-0 right-0 z-10 bg-blue-darker p-1 shadow">
+      <div className="mx-auto flex max-w-4xl items-center justify-between">
+        <div className="h-14 w-24 bg-[url('./assets/logo.png')] bg-contain bg-center bg-no-repeat"></div>
+        <div className="text-2xl text-white">鼎道國際法律事務所</div>
+        <div
+          className="flex h-12 w-10 items-center justify-center rounded text-white"
+          onClick={handleMenuBtnClick}
+        >
+          <FontAwesomeIcon icon="fa-solid fa-bars" className="h-6 w-6" />
+        </div>
       </div>
       {isOpen && (
-        <div data-aos="fade-top" data-aos-duration={500} className="absolute top-16 left-0 flex w-screen flex-col bg-blue shadow">
-          {LINK_LIST.map(({ path, name }, idx) => (
-            <Link
-              key={`link_${idx}`}
-              to={path}
-              className={clsx('mx-4 border-b p-4 text-white last:border-b-0 border-white', {
-                'text-yellow': pathname === path,
-              })}
-              onClick={handleMenuBtnClick}
-            >
-              {name}
-            </Link>
-          ))}
+        <div
+          data-aos="fade-top"
+          data-aos-duration={500}
+          className="absolute top-16 left-0 w-screen  bg-blue shadow"
+        >
+          <div className="mx-auto flex max-w-4xl flex-col">
+            {LINK_LIST.map(({ path, name }, idx) => (
+              <Link
+                key={`link_${idx}`}
+                to={path}
+                className={clsx('mx-4 border-b border-white p-4 text-white last:border-b-0', {
+                  'text-yellow': pathname === path,
+                })}
+                onClick={handleMenuBtnClick}
+              >
+                {name}
+              </Link>
+            ))}
+          </div>
         </div>
       )}
     </header>
