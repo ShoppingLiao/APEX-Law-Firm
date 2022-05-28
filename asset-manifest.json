@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.c4488147.css",
-    "main.js": "/static/js/main.290b5ba6.js",
-    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
-    "static/media/info-1.png": "/static/media/info-1.2a2b7b8ac7d5b769bc27.png",
-    "static/media/info-2.png": "/static/media/info-2.edbfed27b128364620fe.png",
-    "static/media/team-3.png": "/static/media/team-3.0e2e6ff642b06b94517a.png",
-    "static/media/bg.png": "/static/media/bg.f480be855cc8e2da81b9.png",
-    "static/media/team-1.png": "/static/media/team-1.d8c270bc8ce62a498d87.png",
-    "static/media/team-2.png": "/static/media/team-2.3feb59944b848345af1c.png",
-    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/index.html",
-    "main.c4488147.css.map": "/static/css/main.c4488147.css.map",
-    "main.290b5ba6.js.map": "/static/js/main.290b5ba6.js.map",
-    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/APEX-Law-Firm/static/css/main.126a642b.css",
+    "main.js": "/APEX-Law-Firm/static/js/main.cfcd3097.js",
+    "static/js/787.7c27f6fd.chunk.js": "/APEX-Law-Firm/static/js/787.7c27f6fd.chunk.js",
+    "static/media/info-1.png": "/APEX-Law-Firm/static/media/info-1.2a2b7b8ac7d5b769bc27.png",
+    "static/media/info-2.png": "/APEX-Law-Firm/static/media/info-2.edbfed27b128364620fe.png",
+    "static/media/team-3.png": "/APEX-Law-Firm/static/media/team-3.0e2e6ff642b06b94517a.png",
+    "static/media/bg.png": "/APEX-Law-Firm/static/media/bg.f480be855cc8e2da81b9.png",
+    "static/media/team-1.png": "/APEX-Law-Firm/static/media/team-1.d8c270bc8ce62a498d87.png",
+    "static/media/team-2.png": "/APEX-Law-Firm/static/media/team-2.3feb59944b848345af1c.png",
+    "static/media/slick.svg": "/APEX-Law-Firm/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/APEX-Law-Firm/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/APEX-Law-Firm/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/APEX-Law-Firm/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/APEX-Law-Firm/index.html",
+    "main.126a642b.css.map": "/APEX-Law-Firm/static/css/main.126a642b.css.map",
+    "main.cfcd3097.js.map": "/APEX-Law-Firm/static/js/main.cfcd3097.js.map",
+    "787.7c27f6fd.chunk.js.map": "/APEX-Law-Firm/static/js/787.7c27f6fd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4488147.css",
-    "static/js/main.290b5ba6.js"
+    "static/css/main.126a642b.css",
+    "static/js/main.cfcd3097.js"
   ]
 }
