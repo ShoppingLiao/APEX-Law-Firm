@@ -45,9 +45,6 @@ module.exports = {
     screens: {
       xs: '961px',
     },
-    maxWidth: {
-      'max-w-screen-xs': '960px',
-    },
     extend: {},
   },
   variants: {

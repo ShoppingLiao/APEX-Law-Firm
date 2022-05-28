@@ -1,4 +1,6 @@
 import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const SLIDER_SETTING = {
   dots: true,
@@ -7,7 +9,7 @@ const SLIDER_SETTING = {
   autoplaySpeed: 3000,
   speed: 500,
   slidesToShow: 1,
-  slidesToScroll: 1
+  slidesToScroll: 1,
 };
 
 function Info() {
@@ -39,7 +41,11 @@ function Info() {
         <div className="text-blue-darker">( Absolutely Precise EXecution )</div>
         <div className="text-blue-darker">與您並肩同行、為您的權利拼搏</div>
       </div>
-      <div data-aos="fade-left" data-aos-delay="2000"  className='p-4 pb-8 max-w-max-w-screen-xs mx-auto'>
+      <div
+        data-aos="fade-left"
+        data-aos-delay="2000"
+        className="mx-auto max-w-max-w-screen-xs p-4 pb-8"
+      >
         <Slider {...SLIDER_SETTING}>
           <div>
             <div className="h-64 w-96 bg-[url('./assets/info-1.png')] bg-contain bg-center bg-no-repeat" />
@@ -48,10 +54,10 @@ function Info() {
             <div className="h-64 w-96 bg-[url('./assets/info-2.png')] bg-contain bg-center bg-no-repeat" />
           </div>
           <div>
-            <img src="http://placekitten.com/g/400/200" alt='' />
+            <img src="http://placekitten.com/g/400/200" alt="" />
           </div>
           <div>
-            <img src="http://placekitten.com/g/400/200" alt='' />
+            <img src="http://placekitten.com/g/400/200" alt="" />
           </div>
         </Slider>
       </div>

@@ -37,7 +37,7 @@ function Header() {
         <FontAwesomeIcon icon="fa-solid fa-bars" className="h-6 w-6" />
       </div>
       {isOpen && (
-        <div className="absolute top-16 left-0 flex w-screen flex-col bg-blue shadow">
+        <div data-aos="fade-top" data-aos-duration={500} className="absolute top-16 left-0 flex w-screen flex-col bg-blue shadow">
           {LINK_LIST.map(({ path, name }, idx) => (
             <Link
               key={`link_${idx}`}
