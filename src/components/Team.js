@@ -39,8 +39,10 @@ const TEAM_LIST = [
   },
   {
     aos: 'fade-left',
-    title: '律師',
+    title: '合署律師',
     name: '王彥',
+    tel: '0919-202-977',
+    mail: 'swda247226@gmail.com',
     imgName: 'team-3',
     bio: [
       '國立臺灣大學法研所刑法組碩士',
