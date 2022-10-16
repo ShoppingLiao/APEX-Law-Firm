@@ -30,10 +30,10 @@ const TEAM_LIST = [
     imgName: 'team-2',
     bio: [
       '司法院刑事廳量刑分析研究小組',
-      '臺北市政府法律詢律師',
-      '南投市公所法律詢律師',
-      '臺北大學法律服務社法律詢律師',
-      '中正大學法律服務社法律詢律師',
+      '臺北市政府法律諮詢律師',
+      '南投市公所法律諮詢律師',
+      '臺北大學法律服務社法律諮詢律師',
+      '中正大學法律服務社法律諮詢律師',
       '日恒國際法律事務所律師',
     ],
   },
@@ -64,6 +64,7 @@ function Team() {
         <div
           key={`team_${idx}`}
           data-aos={item.aos}
+          data-aos-once={true}
           className="flex w-full flex-col items-center justify-center"
         >
           <div className="mb-4 w-full max-w-xl">
@@ -76,24 +77,35 @@ function Team() {
                 })}
               ></div>
               <div className="ml-4 flex-1">
-                <div data-aos={item.aos} data-aos-delay={200}>
+                <div data-aos={item.aos} data-aos-delay={200} data-aos-once={true}>
                   {item.title}
                 </div>
                 <div
                   className="mb-1 text-center text-2xl font-bold"
                   data-aos={item.aos}
                   data-aos-delay={400}
+                  data-aos-once={true}
                 >
                   {item.name}
                 </div>
                 {item.tel && (
-                  <div className="mb-1 text-sm" data-aos={item.aos} data-aos-delay={600}>
+                  <div
+                    className="mb-1 text-sm"
+                    data-aos={item.aos}
+                    data-aos-delay={600}
+                    data-aos-once={true}
+                  >
                     <FontAwesomeIcon icon="fa-solid fa-phone" className="mr-2" />
                     {item.tel}
                   </div>
                 )}
                 {item.mail && (
-                  <div className="text-sm" data-aos={item.aos} data-aos-delay={800}>
+                  <div
+                    className="text-sm"
+                    data-aos={item.aos}
+                    data-aos-delay={800}
+                    data-aos-once={true}
+                  >
                     <FontAwesomeIcon icon="fa-solid fa-envelope" className="mr-2" />
                     {item.mail}
                   </div>
@@ -102,13 +114,14 @@ function Team() {
             </div>
             {item?.bio?.length > 0 && (
               <div className="mt-4">
-                <div className="text-xl font-semibold mb-2">學 / 經歷</div>
+                <div className="mb-2 text-xl font-semibold">學 / 經歷</div>
                 {item.bio.map((bio, idx2) => (
                   <div
                     key={`team_${idx}_bio_${idx2}`}
                     className="my-1 ml-4 flex items-center"
                     data-aos={item.aos}
                     data-aos-delay={idx2 * 100}
+                    data-aos-once={true}
                   >
                     <FontAwesomeIcon icon="fa-solid fa-circle" className="mr-2 h-2 w-2" />
                     {bio}
@@ -118,13 +131,14 @@ function Team() {
             )}
             {item?.expertise?.length > 0 && (
               <div className="mt-4">
-                <div className="text-xl font-semibold mb-2">專長</div>
+                <div className="mb-2 text-xl font-semibold">專長</div>
                 {item.expertise.map((expert, idx3) => (
                   <div
                     key={`team_${idx}_expertise_${idx3}`}
                     className="my-1 ml-4 flex items-center"
                     data-aos={item.aos}
                     data-aos-delay={idx3 * 100}
+                    data-aos-once={true}
                   >
                     <FontAwesomeIcon icon="fa-solid fa-circle" className="mr-2 h-2 w-2" />
                     {expert}
@@ -136,6 +150,7 @@ function Team() {
               <div
                 className="border-b pb-4"
                 data-aos={item.aos}
+                data-aos-once={true}
                 data-aos-delay={
                   200 +
                   item.bio.length * 100 +

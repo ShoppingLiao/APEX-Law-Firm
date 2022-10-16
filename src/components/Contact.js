@@ -16,23 +16,24 @@ function Contact() {
       <div className="mx-auto mb-4 w-32 border-b text-center text-xl" data-aos="zoom-in">
         聯絡方式
       </div>
-      <div data-aos="fade-right" className="my-4 w-full border-b pb-4">
+      <div data-aos="fade-right" data-aos-once="true" className="my-4 w-full border-b pb-4">
         <div
           className="my-2 text-center text-xl font-bold"
           data-aos="fade-right"
+          data-aos-once="true"
           data-aos-delay={200}
         >
           台中事務所
         </div>
-        <div className="my-1" data-aos="fade-right" data-aos-delay={400}>
+        <div className="my-1" data-aos="fade-right" data-aos-delay={400} data-aos-once="true">
           <FontAwesomeIcon icon="fa-solid fa-phone" className="mr-2" />
           04-23101213
         </div>
-        <div className="my-1" data-aos="fade-right" data-aos-delay={600}>
+        <div className="my-1" data-aos="fade-right" data-aos-delay={600} data-aos-once="true">
           <FontAwesomeIcon icon="fa-solid fa-fax" className="mr-2" />
           04-23101032
         </div>
-        <div className="my-1" data-aos="fade-right" data-aos-delay={800}>
+        <div className="my-1" data-aos="fade-right" data-aos-delay={800} data-aos-once="true">
           <FontAwesomeIcon icon="fa-solid fa-location-dot" className="mr-2" />
           台中市西區東興路三段126之3號3樓
         </div>
@@ -40,6 +41,7 @@ function Contact() {
           className="h_iframe max-h-xl mx-auto mt-4 h-80 w-full max-w-xl"
           data-aos="fade-right"
           data-aos-delay={1000}
+          data-aos-once="true"
         >
           <iframe
             title="taichung-office"
@@ -52,7 +54,7 @@ function Contact() {
             referrerPolicy="no-referrer-when-downgrade"
           />
         </div>
-        <div className="my-4 mx-8" data-aos="fade-right" data-aos-delay={1200}>
+        <div className="my-4 mx-8" data-aos="fade-right" data-aos-delay={1200} data-aos-once="true">
           <Slider {...SLIDER_SETTING}>
             <div className="h-full w-full">
               <div className="max-h-xl mx-auto mt-4 h-80 w-full max-w-xl">
@@ -73,19 +75,20 @@ function Contact() {
         </div>
       </div>
 
-      <div className="w-full pb-4" data-aos="fade-left">
+      <div className="w-full pb-4" data-aos="fade-left" data-aos-once="true">
         <div
           className="my-2 text-center text-xl font-bold"
           data-aos="fade-left"
           data-aos-delay={200}
+          data-aos-once="true"
         >
           台北辦公室
         </div>
-        <div className="my-1" data-aos="fade-left" data-aos-delay={400}>
+        <div className="my-1" data-aos="fade-left" data-aos-delay={400} data-aos-once="true">
           <FontAwesomeIcon icon="fa-solid fa-phone" className="mr-2" />
           02-23881000
         </div>
-        <div className="my-1" data-aos="fade-left" data-aos-delay={600}>
+        <div className="my-1" data-aos="fade-left" data-aos-delay={600} data-aos-once="true">
           <FontAwesomeIcon icon="fa-solid fa-location-dot" className="mr-2" />
           台北市中正區館前路34號11樓
         </div>
@@ -93,6 +96,7 @@ function Contact() {
           className="h_iframe max-h-xl mx-auto mt-4 h-80 w-full max-w-xl"
           data-aos="fade-left"
           data-aos-delay={800}
+          data-aos-once="true"
         >
           <iframe
             title="taipei-office"

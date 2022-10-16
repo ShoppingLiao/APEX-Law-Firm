@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
-    <footer className="fixed bottom-0 left-0 right-0 bg-blue-darker px-4">
+    <footer className="w-screen bg-blue-darker px-4">
       <div className="mx-auto max-w-4xl">
         <div className="flex items-center border-b py-2 text-white">
           <Link to="/" className="flex-1 border-r text-center">
@@ -29,7 +29,5 @@ function Footer() {
     </footer>
   );
 }
-
-// https://www.facebook.com/%E9%BC%8E%E9%81%93%E5%9C%8B%E9%9A%9B%E6%B3%95%E5%BE%8B%E4%BA%8B%E5%8B%99%E6%89%80-109636181734540
 
 export default Footer;

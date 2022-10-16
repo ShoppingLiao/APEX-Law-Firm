@@ -27,7 +27,7 @@ function Header() {
   }
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-10 bg-blue-darker p-1 shadow">
+    <header className="w-screen z-10 bg-blue-darker p-1 shadow">
       <div className="mx-auto flex max-w-4xl items-center justify-between">
         <div className="h-14 w-24 bg-[url('./assets/logo.png')] bg-contain bg-center bg-no-repeat"></div>
         <div className="text-2xl text-white">鼎道國際法律事務所</div>

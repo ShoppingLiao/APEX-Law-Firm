@@ -1,8 +1,15 @@
-import { Outlet } from 'react-router-dom';
+import { useEffect } from 'react';
+import { Outlet, useLocation } from 'react-router-dom';
 
 export function Main() {
-  test();
-  function test() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    const ref = document.getElementById('main');
+    ref.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [pathname]);
+
+  function initAosScroll() {
     const items = document.querySelectorAll('.aos-init');
 
     if (items) {
@@ -20,8 +27,9 @@ export function Main() {
   }
   return (
     <div
-      className="sm:max-w-3xl mx-auto w-full flex-1 overflow-y-auto p-4 py-20"
-      onScroll={test}
+      id='main'
+      className="sm:max-w-3xl mx-auto w-full flex-1 overflow-y-auto overflow-x-hidden p-4  bg-[url('./assets/bg.png')]"
+      onScroll={initAosScroll}
     >
       <Outlet />
     </div>

@@ -11,6 +11,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html, body {
+  overflow: hidden;
+  height: 100%;
+}
+
+.centered_layout{
+  position: fixed;
+  inset: 0;
+  overflow: auto;
+
+  place-items: center;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
