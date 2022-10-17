@@ -52,6 +52,23 @@ const TEAM_LIST = [
     ],
     expertise: ['家事律師培訓合格', '勞動爭議案件', '詐欺、妨害性自主等刑案', '一般民刑事案件'],
   },
+  {
+    aos: 'fade-right',
+    title: '合署律師',
+    name: '郭怜君',
+    tel: '0902-181-700',
+    mail: 'kuolaw611@gmail.com',
+    imgName: 'team-4',
+    bio: [
+      '國立暨南國際大學高階經營管理碩士班',
+      '私立輔仁大學法律系',
+      '財團法人法律扶助基金會扶助律師',
+      '臺中市潭子區頭家國小公益顧問律師',
+      '亞細亞國際法律事務所受僱律師',
+      '尚論法律事務所實習律師',
+      '臺灣臺中地方法院刑事庭法官助理',
+    ],
+  },
 ];
 
 function Team() {
@@ -74,6 +91,7 @@ function Team() {
                   [`bg-[url('./assets/team-1.png')]`]: item.imgName === 'team-1',
                   [`bg-[url('./assets/team-2.png')]`]: item.imgName === 'team-2',
                   [`bg-[url('./assets/team-3.png')]`]: item.imgName === 'team-3',
+                  [`bg-[url('./assets/team-4.png')]`]: item.imgName === 'team-4',
                 })}
               ></div>
               <div className="ml-4 flex-1">
