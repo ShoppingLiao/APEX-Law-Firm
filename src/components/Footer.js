@@ -11,13 +11,22 @@ function Footer() {
           <Link to="/contact" className="flex-1 border-r text-center">
             聯絡方式
           </Link>
-          <div className="flex-1 text-center">
+          <div className="flex-1 border-r text-center">
             <a
               href="https://www.facebook.com/%E9%BC%8E%E9%81%93%E5%9C%8B%E9%9A%9B%E6%B3%95%E5%BE%8B%E4%BA%8B%E5%8B%99%E6%89%80-109636181734540"
               target="_blank"
               rel="noreferrer noopener"
             >
               Facebook
+            </a>
+          </div>
+          <div className="flex-1 text-center">
+            <a
+              href="https://lin.ee/IyHXaud"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Line
             </a>
           </div>
         </div>
