@@ -38,6 +38,15 @@ const TEAM_LIST = [
   },
   {
     aos: 'fade-left',
+    title: '受雇律師',
+    name: '楊曜宇',
+    tel: '0952-984-722',
+    mail: 'yaoyuyang920@gmail.com',
+    imgName: 'team-5',
+    bio: ['國立臺北大學法學學士', '國立臺灣大學法學碩士'],
+  },
+  {
+    aos: 'fade-left',
     title: '合署律師',
     name: '王彥',
     tel: '0919-202-977',
@@ -68,6 +77,74 @@ const TEAM_LIST = [
       '臺灣臺中地方法院刑事庭法官助理',
     ],
   },
+  {
+    aos: 'fade-right',
+    title: '合署律師',
+    name: '陳翎',
+    tel: '0963-357-453',
+    mail: 'cl99601192@gmail.com',
+    imgName: 'team-6',
+    bio: ['國立政治大學法學學士', '國立中興大學法學碩士', '臺中地方法院法官助理'],
+  },
+  {
+    aos: 'fade-right',
+    title: '合署律師',
+    name: '柯瑞源',
+    bio: [
+      '國立臺灣大學法學學士',
+      '國立臺灣大學法學碩士',
+      '佐誠律師事務所',
+      '眾城國際法律事務所',
+      '合創法律事務所',
+    ],
+  },
+  {
+    aos: 'fade-right',
+    title: '合署律師',
+    name: '劉俊宏',
+    tel: '04-2310-1213',
+    mail: 'junhung0204@163.com',
+    imgName: 'team-7',
+    bio: [
+      '國立政治大學法學學士',
+      '國立臺北大學法學碩士',
+      '北京中國政法大學法學博士',
+      '中華民國律師',
+      '中華人民共和國律師',
+      '北京市鑫諾律師事務所律師',
+      '財團法人海峽交流基金會臺商財經法律顧問',
+    ],
+  },
+  {
+    aos: 'fade-right',
+    title: '合署律師',
+    name: '鄭才',
+    tel: '0988-079-648',
+    mail: 'jacky123ooo@gmail.com',
+    imgName: 'team-8',
+    bio: [
+      '東海大學法律碩士',
+      '東海大學兼任講師',
+      '曾任明冠聯合法律事務所律師',
+      '鼎道國際法律事務所合署律師',
+      '岩語茶連鎖飲料店總部顧問律師',
+      '臺中市警察局烏日分局顧問律師',
+    ],
+  },
+  {
+    aos: 'fade-right',
+    title: '合署律師',
+    name: '楊時綱',
+    tel: '0912-794-594',
+    mail: 'ysklushi@gmail.com',
+    bio: [
+      '國立政治大學政研所碩士',
+      '財團法人法律扶助基金會扶助律師',
+      '臺北市政府法律諮詢律師',
+      '新北市政府法律諮詢律師',
+      '新北市勞工大學講師',
+    ],
+  },
 ];
 
 function Team() {
@@ -79,20 +156,26 @@ function Team() {
       {TEAM_LIST.map((item, idx) => (
         <div
           key={`team_${idx}`}
-          data-aos={item.aos}
+          data-aos={`fade-${idx % 2 === 0 ? 'left' : 'right'}`}
           data-aos-once={true}
           className="flex w-full flex-col items-center justify-center"
         >
           <div className="mb-4 w-full max-w-xl">
             <div className="flex items-center ">
-              <div
-                className={clsx('h-28 w-28 rounded-full bg-contain bg-center bg-no-repeat', {
-                  [`bg-[url('./assets/team-1.png')]`]: item.imgName === 'team-1',
-                  [`bg-[url('./assets/team-2.png')]`]: item.imgName === 'team-2',
-                  [`bg-[url('./assets/team-3.png')]`]: item.imgName === 'team-3',
-                  [`bg-[url('./assets/team-4.png')]`]: item.imgName === 'team-4',
-                })}
-              ></div>
+              {item.imgName && (
+                <div
+                  className={clsx('h-28 w-28 rounded-full bg-contain bg-center bg-no-repeat', {
+                    [`bg-[url('./assets/team-1.png')]`]: item.imgName === 'team-1',
+                    [`bg-[url('./assets/team-2.png')]`]: item.imgName === 'team-2',
+                    [`bg-[url('./assets/team-3.png')]`]: item.imgName === 'team-3',
+                    [`bg-[url('./assets/team-4.png')]`]: item.imgName === 'team-4',
+                    [`bg-[url('./assets/team-5.png')]`]: item.imgName === 'team-5',
+                    [`bg-[url('./assets/team-6.png')]`]: item.imgName === 'team-6',
+                    [`bg-[url('./assets/team-7.png')]`]: item.imgName === 'team-7',
+                    [`bg-[url('./assets/team-8.png')]`]: item.imgName === 'team-8',
+                  })}
+                />
+              )}
               <div className="ml-4 flex-1">
                 <div data-aos={item.aos} data-aos-delay={200} data-aos-once={true}>
                   {item.title}
