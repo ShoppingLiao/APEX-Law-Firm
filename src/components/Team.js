@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const TEAM_LIST = [
   {
-    aos: 'fade-left',
     title: '主持律師',
     name: '歐陽徵',
     tel: '0965-858-580',
@@ -22,7 +21,6 @@ const TEAM_LIST = [
     ],
   },
   {
-    aos: 'fade-right',
     title: '主持律師',
     name: '林根億',
     tel: '0978-709-195',
@@ -37,7 +35,6 @@ const TEAM_LIST = [
     ],
   },
   {
-    aos: 'fade-left',
     title: '受雇律師',
     name: '楊曜宇',
     tel: '0952-984-722',
@@ -45,8 +42,8 @@ const TEAM_LIST = [
     imgName: 'team-5',
     bio: ['國立臺北大學法學學士', '國立臺灣大學法學碩士', '臺北大學法律服務社法律諮詢律師'],
   },
+  /*
   {
-    aos: 'fade-left',
     title: '合署律師',
     name: '王彥',
     tel: '0919-202-977',
@@ -60,8 +57,8 @@ const TEAM_LIST = [
     ],
     expertise: ['家事律師培訓合格', '勞動爭議案件', '詐欺、妨害性自主等刑案', '一般民刑事案件'],
   },
+  */
   {
-    aos: 'fade-right',
     title: '合署律師',
     name: '郭怜君',
     tel: '0902-181-700',
@@ -77,7 +74,6 @@ const TEAM_LIST = [
     ],
   },
   {
-    aos: 'fade-right',
     title: '合署律師',
     name: '陳翎',
     tel: '0963-357-453',
@@ -86,7 +82,6 @@ const TEAM_LIST = [
     bio: ['國立政治大學法學學士', '國立中興大學法學碩士', '臺中地方法院法官助理'],
   },
   {
-    aos: 'fade-right',
     title: '合署律師',
     name: '柯瑞源',
     bio: [
@@ -98,7 +93,6 @@ const TEAM_LIST = [
     ],
   },
   {
-    aos: 'fade-right',
     title: '合署律師',
     name: '劉俊宏',
     tel: '04-2310-1213',
@@ -115,7 +109,6 @@ const TEAM_LIST = [
     ],
   },
   {
-    aos: 'fade-right',
     title: '合署律師',
     name: '鄭才',
     tel: '0988-079-648',
@@ -131,17 +124,29 @@ const TEAM_LIST = [
     ],
   },
   {
-    aos: 'fade-right',
     title: '合署律師',
     name: '楊時綱',
     tel: '0912-794-594',
     mail: 'ysklushi@gmail.com',
+    imgName: 'team-9',
     bio: [
       '國立政治大學政研所碩士',
       '財團法人法律扶助基金會扶助律師',
       '臺北市政府法律諮詢律師',
       '新北市政府法律諮詢律師',
       '新北市勞工大學講師',
+    ],
+  },
+  {
+    title: '合署律師',
+    name: '呂緯武',
+    tel: '0928-935-359',
+    mail: 'nisseilaw@gmail.com',
+    imgName: 'team-10',
+    bio: [
+      '國立臺灣大學法律學研究所公法組碩士',
+      '國立臺北大學法學士',
+      '財團法人法律扶助基金會扶助律師',
     ],
   },
 ];
@@ -172,16 +177,18 @@ function Team() {
                     [`bg-[url('./assets/team-6.png')]`]: item.imgName === 'team-6',
                     [`bg-[url('./assets/team-7.png')]`]: item.imgName === 'team-7',
                     [`bg-[url('./assets/team-8.png')]`]: item.imgName === 'team-8',
+                    [`bg-[url('./assets/team-9.jpg')]`]: item.imgName === 'team-9',
+                    [`bg-[url('./assets/team-10.jpg')]`]: item.imgName === 'team-10',
                   })}
                 />
               )}
               <div className="ml-4 flex-1">
-                <div data-aos={item.aos} data-aos-delay={200} data-aos-once={true}>
+                <div data-aos={`fade-${idx % 2 === 0 ? 'left' : 'right'}`} data-aos-delay={200} data-aos-once={true}>
                   {item.title}
                 </div>
                 <div
                   className="mb-1 text-center text-2xl font-bold"
-                  data-aos={item.aos}
+                  data-aos={`fade-${idx % 2 === 0 ? 'left' : 'right'}`}
                   data-aos-delay={400}
                   data-aos-once={true}
                 >
@@ -190,7 +197,7 @@ function Team() {
                 {item.tel && (
                   <div
                     className="mb-1 text-sm"
-                    data-aos={item.aos}
+                    data-aos={`fade-${idx % 2 === 0 ? 'left' : 'right'}`}
                     data-aos-delay={600}
                     data-aos-once={true}
                   >
@@ -201,7 +208,7 @@ function Team() {
                 {item.mail && (
                   <div
                     className="text-sm"
-                    data-aos={item.aos}
+                    data-aos={`fade-${idx % 2 === 0 ? 'left' : 'right'}`}
                     data-aos-delay={800}
                     data-aos-once={true}
                   >
@@ -218,7 +225,7 @@ function Team() {
                   <div
                     key={`team_${idx}_bio_${idx2}`}
                     className="my-1 ml-4 flex items-center"
-                    data-aos={item.aos}
+                    data-aos={`fade-${idx % 2 === 0 ? 'left' : 'right'}`}
                     data-aos-delay={idx2 * 100}
                     data-aos-once={true}
                   >
@@ -235,7 +242,7 @@ function Team() {
                   <div
                     key={`team_${idx}_expertise_${idx3}`}
                     className="my-1 ml-4 flex items-center"
-                    data-aos={item.aos}
+                    data-aos={`fade-${idx % 2 === 0 ? 'left' : 'right'}`}
                     data-aos-delay={idx3 * 100}
                     data-aos-once={true}
                   >
@@ -248,7 +255,7 @@ function Team() {
             {idx !== TEAM_LIST.length - 1 && (
               <div
                 className="border-b pb-4"
-                data-aos={item.aos}
+                data-aos={`fade-${idx % 2 === 0 ? 'left' : 'right'}`}
                 data-aos-once={true}
                 data-aos-delay={
                   200 +
