@@ -149,6 +149,54 @@ const TEAM_LIST = [
       '財團法人法律扶助基金會扶助律師',
     ],
   },
+  {
+    title: '受雇律師',
+    name: '劉亭妤',
+    tel: '0910-701-109',
+    mail: 'liulawyerliu@gmail.com',
+    imgName: 'team-11',
+    bio: [
+      '國立中正大學財經法律學系學士',
+      '國立中正大學財經法律研究所財經法組碩士',
+      '立勤國際法律事務所高雄所實習律師',
+      '臺中上智聯合法律事務所律師',
+      '臺中市南屯區公所法律扶助服務律師', 
+      '臺中市第四區居家托育服務中心講師'
+    ],
+  },
+  {
+    title: '實習律師',
+    name: '周伯彥',
+    tel: '0933-616-977',
+    mail: 'ray8076@gmail.com',
+    bio: [
+      '國立臺北大學法律學系學士',
+      '臺灣士林地方法院法官助理',
+    ],
+  },
+  {
+    title: '受雇律師',
+    name: '鄭志彬',
+    tel: '0983-417-733',
+    mail: 'sa900514@gmail.com',
+    imgName: 'team-12',
+    bio: [
+      '臺中科技大學應用日語系學士',
+      '國立政治大學法學碩士',
+      '內政部警政署保安警察第四總隊警員',
+    ],
+  },
+  {
+    title: '受雇律師',
+    name: '鄭皓文',
+    tel: '0966-334-168',
+    mail: 'haoattorney@gmail.com',
+    imgName: 'team-13',
+    bio: [
+      '國立中正大學財經法律研究所稅法組碩士',
+      '矽品精密工業股份有限公司 法務經理',
+    ],
+  },
 ];
 
 function Team() {
@@ -179,6 +227,9 @@ function Team() {
                     [`bg-[url('./assets/team-8.png')]`]: item.imgName === 'team-8',
                     [`bg-[url('./assets/team-9.jpg')]`]: item.imgName === 'team-9',
                     [`bg-[url('./assets/team-10.jpg')]`]: item.imgName === 'team-10',
+                    [`bg-[url('./assets/team-11.jpg')]`]: item.imgName === 'team-11',
+                    [`bg-[url('./assets/team-12.jpg')]`]: item.imgName === 'team-12',
+                    [`bg-[url('./assets/team-13.jpg')]`]: item.imgName === 'team-13',
                   })}
                 />
               )}
